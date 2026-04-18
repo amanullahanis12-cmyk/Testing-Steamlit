@@ -2,7 +2,7 @@ import streamlit as st
 import os
 from groq import Groq
 
-client = Groq(api_key=st.secrets["GROQ_API_KEY"])
+client = Groq(api_key=st.secrets["GROQ_API_KEY"],)
 area = st.text_area("Prompt")
 buttonss = st.button("Submit")
 if buttonss:
